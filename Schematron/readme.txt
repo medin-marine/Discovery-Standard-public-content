@@ -1,0 +1,1 @@
+This folder contains the MEDIN Schematron that validates the MEDIN Discovery Metadata Standard. 
