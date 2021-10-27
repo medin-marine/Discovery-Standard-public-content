@@ -173,6 +173,13 @@
      Standard, which specifies that terms from ISO Codelist MD_MaintenanceFrequenceyCode
      shall be used, and G17 is a source for these terms. 
      
+     ===========================================================================
+     
+     2021Oct05 SGAF MEDIN - commented out assert test for characterSet that
+     G09 vocabulary xlink anchor must be used. This applies more rigor than in 
+     Standard, which specifies that terms from ISO Codelist MD_CharacterSetCode
+     shall be used, and G09 is a source for these terms.
+     
 -->
 
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt" schemaVersion="1.2">
@@ -2440,11 +2447,11 @@
       <sch:emph>Example 2:</sch:emph>
     </sch:p>
     <sch:p>utf8</sch:p>
-    <sch:rule context="/*/gmd:identificationInfo/*/gmd:characterSet">
+<!--    <sch:rule context="/*/gmd:identificationInfo/*/gmd:characterSet">
       <sch:assert test="contains(*/@codeList , 'http://vocab.nerc.ac.uk/collection/G09/current/')">
         Character Encoding: codeList must contain 'http://vocab.nerc.ac.uk/collection/G09/current/'.
       </sch:assert>
-    </sch:rule>
+    </sch:rule>-->
   </sch:pattern>
   <sch:pattern is-a="TypeNotNillablePattern" id="Medin-Character-Encoding-CodeListValue-NotNillable">
     <sch:param name="context" value="/*/gmd:identificationInfo/*/gmd:characterSet/gmd:MD_CharacterSetCode/@codeListValue"/>
