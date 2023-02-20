@@ -1,0 +1,727 @@
+<?xml version="1.0"?>
+<gmd:MD_Metadata xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gmd="http://www.isotc211.org/2005/gmd">
+ <!--File Identifier (M)-->
+ <gmd:fileIdentifier>
+  <gco:CharacterString>cd8ec516-dc77-462c-8265-601fa86fdafd</gco:CharacterString>
+ </gmd:fileIdentifier>
+ <!--Element 29 Metadata language (M)-->
+ <gmd:language>
+  <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng">English</gmd:LanguageCode>
+ </gmd:language>
+ <!--Element 4 Resource type (M)-->
+ <gmd:hierarchyLevel>
+  <gmd:MD_ScopeCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ScopeCode" codeListValue="series">series</gmd:MD_ScopeCode>
+ </gmd:hierarchyLevel>
+ <!-- Element 31 Hierarchy Level Name -->
+ <gmd:hierarchyLevelName>
+  <gco:CharacterString>series</gco:CharacterString>
+ </gmd:hierarchyLevelName>
+ <!--Sub element 22.4 Metadata point of contact (M)-->
+ <gmd:contact>
+  <gmd:CI_ResponsibleParty>
+   <gmd:organisationName>
+    <gco:CharacterString>Marine Data Institution</gco:CharacterString>
+   </gmd:organisationName>
+   <gmd:contactInfo>
+    <gmd:CI_Contact>
+     <gmd:address>
+      <gmd:CI_Address>
+       <gmd:electronicMailAddress>
+        <gco:CharacterString>marinedatainstitution@emailaddress.com</gco:CharacterString>
+       </gmd:electronicMailAddress>
+      </gmd:CI_Address>
+     </gmd:address>
+    </gmd:CI_Contact>
+   </gmd:contactInfo>
+   <gmd:role>
+    <gmd:CI_RoleCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+   </gmd:role>
+  </gmd:CI_ResponsibleParty>
+ </gmd:contact>
+ <!--Element 26 Metadata date (M)-->
+ <gmd:dateStamp>
+  <gco:Date>2023-02-20</gco:Date>
+ </gmd:dateStamp>
+ <!--Element 27 - Metadata standard name (M)-->
+ <gmd:metadataStandardName>
+  <gmx:Anchor xlink:type="simple" xlink:href="http://vocab.nerc.ac.uk/collection/M25/current/MEDIN/">MEDIN</gmx:Anchor>
+ </gmd:metadataStandardName>
+ <!--Element 28 - Metadata standard version (M)-->
+ <gmd:metadataStandardVersion>
+  <gco:CharacterString>3.1.2</gco:CharacterString>
+ </gmd:metadataStandardVersion>
+ <!--Element 15 Spatial reference system (M)-->
+ <gmd:referenceSystemInfo>
+  <gmd:MD_ReferenceSystem>
+   <gmd:referenceSystemIdentifier>
+    <gmd:RS_Identifier>
+     <gmd:authority>
+      <gmd:CI_Citation>
+       <gmd:title>
+        <gco:CharacterString>EPSG Geodetic Parameter Registry</gco:CharacterString>
+       </gmd:title>
+       <gmd:date>
+        <gmd:CI_Date>
+         <gmd:date>
+          <gco:Date>2021-01-06</gco:Date>
+         </gmd:date>
+         <gmd:dateType>
+          <gmd:CI_DateTypeCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+         </gmd:dateType>
+        </gmd:CI_Date>
+       </gmd:date>
+      </gmd:CI_Citation>
+     </gmd:authority>
+     <gmd:code>
+      <gmx:Anchor xlink:href="https://apps.epsg.org/api/v1/GeodeticCoordRefSystem/4326">WGS 84</gmx:Anchor>
+     </gmd:code>
+    </gmd:RS_Identifier>
+   </gmd:referenceSystemIdentifier>
+  </gmd:MD_ReferenceSystem>
+ </gmd:referenceSystemInfo>
+ <gmd:identificationInfo>
+  <gmd:MD_DataIdentification>
+   <gmd:citation>
+    <gmd:CI_Citation>
+     <!-- 1 Resource title (M) -->
+     <gmd:title>
+      <gco:CharacterString>Demonstration XML resource for series showing examples of good practice for MEDIN metadata creation</gco:CharacterString>
+     </gmd:title>
+     <gmd:alternateTitle>
+      <gco:CharacterString>Demonstration series XML for metadata standard version v3.1.2</gco:CharacterString>
+     </gmd:alternateTitle>
+     <!-- 16.1 Date of Publication (M) -->
+     <gmd:date>
+      <gmd:CI_Date>
+       <gmd:date>
+        <gco:Date>2022-11-20</gco:Date>
+       </gmd:date>
+       <gmd:dateType>
+        <gmd:CI_DateTypeCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+       </gmd:dateType>
+      </gmd:CI_Date>
+     </gmd:date>
+     <!-- 16.2 Date of Revision (M) -->
+     <gmd:date>
+      <gmd:CI_Date>
+       <gmd:date>
+        <gco:Date>2022-11-21</gco:Date>
+       </gmd:date>
+       <gmd:dateType>
+        <gmd:CI_DateTypeCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+       </gmd:dateType>
+      </gmd:CI_Date>
+     </gmd:date>
+     <!-- 16.3 Date of Creation (M) -->
+     <gmd:date>
+      <gmd:CI_Date>
+       <gmd:date>
+        <gco:Date>2022-11-18</gco:Date>
+       </gmd:date>
+       <gmd:dateType>
+        <gmd:CI_DateTypeCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation">creation</gmd:CI_DateTypeCode>
+       </gmd:dateType>
+      </gmd:CI_Date>
+     </gmd:date>
+     <!-- 6 Unique resource identifier (C) -->
+     <gmd:identifier>
+      <gmd:MD_Identifier>
+       <gmd:code>
+        <gco:CharacterString>MDI025600424</gco:CharacterString>
+       </gmd:code>
+       <gmd:codeSpace>
+        <gco:CharacterString>http://marinedatainstitution.org/</gco:CharacterString>
+       </gmd:codeSpace>
+      </gmd:MD_Identifier>
+     </gmd:identifier>
+     <!-- 6 Unique resource identifier (C) -->
+     <gmd:identifier>
+      <gmd:MD_Identifier>
+       <gmd:code>
+        <gco:CharacterString>MDI025600648</gco:CharacterString>
+       </gmd:code>
+       <gmd:codeSpace>
+        <gco:CharacterString>http://marinedatainstitution.org/</gco:CharacterString>
+       </gmd:codeSpace>
+      </gmd:MD_Identifier>
+     </gmd:identifier>
+    </gmd:CI_Citation>
+   </gmd:citation>
+   <!-- 3 Resource abstract (M) -->
+   <gmd:abstract>
+    <gco:CharacterString>The abstract is where a summary of the data resource needs to be given, so that users can read it and decide if it is useful to them. It must be at least 100 characters long. This is demonstration series XML for the MEDIN metadata standard version v3.1.2.</gco:CharacterString>
+   </gmd:abstract>
+   <!-- 22 Responsible Party (M) -->
+   <!-- Sub element 22.5 Owner (M) (Element 22 Responsible Party (M)) -->
+   <gmd:pointOfContact>
+    <gmd:CI_ResponsibleParty>
+     <gmd:organisationName>
+      <gco:CharacterString>Marine Data Institution</gco:CharacterString>
+     </gmd:organisationName>
+     <gmd:positionName>
+      <gco:CharacterString>Data Manager</gco:CharacterString>
+     </gmd:positionName>
+     <gmd:contactInfo>
+      <gmd:CI_Contact>
+       <gmd:address>
+        <gmd:CI_Address>
+         <gmd:electronicMailAddress>
+          <gco:CharacterString>marinedatainstitution@emailaddress.com</gco:CharacterString>
+         </gmd:electronicMailAddress>
+        </gmd:CI_Address>
+       </gmd:address>
+      </gmd:CI_Contact>
+     </gmd:contactInfo>
+     <gmd:role>
+      <gmd:CI_RoleCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="owner">owner</gmd:CI_RoleCode>
+     </gmd:role>
+    </gmd:CI_ResponsibleParty>
+   </gmd:pointOfContact>
+   <!-- Sub element 22.2 Custodian (M) (Element 22 Responsible Party (M)) -->
+   <gmd:pointOfContact>
+    <gmd:CI_ResponsibleParty>
+     <gmd:organisationName>
+      <gco:CharacterString>Marine Data Institution</gco:CharacterString>
+     </gmd:organisationName>
+     <gmd:positionName>
+      <gco:CharacterString>Data Manager</gco:CharacterString>
+     </gmd:positionName>
+     <gmd:contactInfo>
+      <gmd:CI_Contact>
+       <gmd:address>
+        <gmd:CI_Address>
+         <gmd:electronicMailAddress>
+          <gco:CharacterString>marinedatainstitution@emailaddress.com</gco:CharacterString>
+         </gmd:electronicMailAddress>
+        </gmd:CI_Address>
+       </gmd:address>
+      </gmd:CI_Contact>
+     </gmd:contactInfo>
+     <gmd:role>
+      <gmd:CI_RoleCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="custodian">custodian</gmd:CI_RoleCode>
+     </gmd:role>
+    </gmd:CI_ResponsibleParty>
+   </gmd:pointOfContact>
+   <!-- Sub element 22.1 Originator (M) (Element 22 Responsible Party (M)) -->
+   <gmd:pointOfContact>
+    <gmd:CI_ResponsibleParty>
+     <gmd:organisationName>
+      <gco:CharacterString>Marine Data Institution</gco:CharacterString>
+     </gmd:organisationName>
+     <gmd:positionName>
+      <gco:CharacterString>Data Manager</gco:CharacterString>
+     </gmd:positionName>
+     <gmd:contactInfo>
+      <gmd:CI_Contact>
+       <gmd:address>
+        <gmd:CI_Address>
+         <gmd:electronicMailAddress>
+          <gco:CharacterString>marinedatainstitution@emailaddress.com</gco:CharacterString>
+         </gmd:electronicMailAddress>
+        </gmd:CI_Address>
+       </gmd:address>
+      </gmd:CI_Contact>
+     </gmd:contactInfo>
+     <gmd:role>
+      <gmd:CI_RoleCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+     </gmd:role>
+    </gmd:CI_ResponsibleParty>
+   </gmd:pointOfContact>
+   <!-- Sub element 22.3 Distributor (M) (Element 22 Responsible Party (M)) -->
+   <gmd:pointOfContact>
+    <gmd:CI_ResponsibleParty>
+     <gmd:organisationName>
+      <gco:CharacterString>Marine Data Institution</gco:CharacterString>
+     </gmd:organisationName>
+     <gmd:positionName>
+      <gco:CharacterString>Data Manager</gco:CharacterString>
+     </gmd:positionName>
+     <gmd:contactInfo>
+      <gmd:CI_Contact>
+       <gmd:address>
+        <gmd:CI_Address>
+         <gmd:electronicMailAddress>
+          <gco:CharacterString>marinedatainstitution@emailaddress.com</gco:CharacterString>
+         </gmd:electronicMailAddress>
+        </gmd:CI_Address>
+       </gmd:address>
+      </gmd:CI_Contact>
+     </gmd:contactInfo>
+     <gmd:role>
+      <gmd:CI_RoleCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="distributor">distributor</gmd:CI_RoleCode>
+     </gmd:role>
+    </gmd:CI_ResponsibleParty>
+   </gmd:pointOfContact>
+   <!--Element 24 - Frequency of update (C)-->
+   <gmd:resourceMaintenance>
+    <gmd:MD_MaintenanceInformation>
+     <gmd:maintenanceAndUpdateFrequency>
+      <gmd:MD_MaintenanceFrequencyCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="irregular">irregular</gmd:MD_MaintenanceFrequencyCode>
+     </gmd:maintenanceAndUpdateFrequency>
+    </gmd:MD_MaintenanceInformation>
+   </gmd:resourceMaintenance>
+   <!--Element 11 - Keywords (M)-->
+   <gmd:descriptiveKeywords>
+    <gmd:MD_Keywords>
+     <gmd:keyword>
+      <gmx:Anchor xlink:href="http://vocab.nerc.ac.uk/collection/N01/current/NDGO0001/">Marine Environmental Data and Information Network</gmx:Anchor>
+     </gmd:keyword>
+     <gmd:thesaurusName>
+      <gmd:CI_Citation>
+       <gmd:title>
+        <gco:CharacterString>MEDIN metadata record availability</gco:CharacterString>
+       </gmd:title>
+       <gmd:date>
+        <gmd:CI_Date>
+         <gmd:date>
+          <gco:Date>2023-02-20</gco:Date>
+         </gmd:date>
+         <gmd:dateType>
+          <gmd:CI_DateTypeCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+         </gmd:dateType>
+        </gmd:CI_Date>
+       </gmd:date>
+      </gmd:CI_Citation>
+     </gmd:thesaurusName>
+    </gmd:MD_Keywords>
+   </gmd:descriptiveKeywords>
+   <gmd:descriptiveKeywords>
+    <gmd:MD_Keywords>
+     <gmd:keyword>
+      <gmx:Anchor xlink:href="http://vocab.nerc.ac.uk/collection/P22/current/28/">Oceanographic geographical features</gmx:Anchor>
+     </gmd:keyword>
+     <gmd:thesaurusName>
+      <gmd:CI_Citation>
+       <gmd:title>
+        <gco:CharacterString>GEMET - INSPIRE themes, version 1.0</gco:CharacterString>
+       </gmd:title>
+       <gmd:date>
+        <gmd:CI_Date>
+         <gmd:date>
+          <gco:Date>2021-01-06</gco:Date>
+         </gmd:date>
+         <gmd:dateType>
+          <gmd:CI_DateTypeCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+         </gmd:dateType>
+        </gmd:CI_Date>
+       </gmd:date>
+      </gmd:CI_Citation>
+     </gmd:thesaurusName>
+    </gmd:MD_Keywords>
+   </gmd:descriptiveKeywords>
+   <gmd:descriptiveKeywords>
+    <gmd:MD_Keywords>
+     <gmd:keyword>
+      <gmx:Anchor xlink:href="http://vocab.nerc.ac.uk/collection/P02/current/NOYS/">Acoustic noise in the water column</gmx:Anchor>
+     </gmd:keyword>
+     <gmd:thesaurusName>
+      <gmd:CI_Citation>
+       <gmd:title>
+        <gco:CharacterString>SeaDataNet Parameter Discovery Vocabulary</gco:CharacterString>
+       </gmd:title>
+       <gmd:date>
+        <gmd:CI_Date>
+         <gmd:date>
+          <gco:Date>2021-01-06</gco:Date>
+         </gmd:date>
+         <gmd:dateType>
+          <gmd:CI_DateTypeCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+         </gmd:dateType>
+        </gmd:CI_Date>
+       </gmd:date>
+      </gmd:CI_Citation>
+     </gmd:thesaurusName>
+    </gmd:MD_Keywords>
+   </gmd:descriptiveKeywords>
+   <gmd:descriptiveKeywords>
+    <gmd:MD_Keywords>
+     <gmd:keyword>
+      <gmx:Anchor xlink:href="300">Geographic workflow/task management services</gmx:Anchor>
+     </gmd:keyword>
+     <gmd:thesaurusName>
+      <gmd:CI_Citation>
+       <gmd:title>
+        <gco:CharacterString>Spatial Data Service Type</gco:CharacterString>
+       </gmd:title>
+       <gmd:date>
+        <gmd:CI_Date>
+         <gmd:date>
+          <gco:Date>2011-02-14</gco:Date>
+         </gmd:date>
+         <gmd:dateType>
+          <gmd:CI_DateTypeCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+         </gmd:dateType>
+        </gmd:CI_Date>
+       </gmd:date>
+      </gmd:CI_Citation>
+     </gmd:thesaurusName>
+    </gmd:MD_Keywords>
+   </gmd:descriptiveKeywords>
+   <!--Element 20 Limitations on public access (M)-->
+   <gmd:resourceConstraints>
+    <gmd:MD_LegalConstraints>
+     <!--Element 20.1 Access Constraints (M)-->
+     <gmd:accessConstraints>
+      <gmd:MD_RestrictionCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
+     </gmd:accessConstraints>
+     <!--Element 20.2 Other Constraints (M)-->
+     <gmd:otherConstraints>
+      <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1e">Would adversely affect intellectual property rights.</gmx:Anchor>
+     </gmd:otherConstraints>
+    </gmd:MD_LegalConstraints>
+   </gmd:resourceConstraints>
+   <!--Element 21 Conditions applying for access and use (M)-->
+   <gmd:resourceConstraints>
+    <gmd:MD_LegalConstraints>
+     <!-- Element 21.1 Use Constraints (M) -->
+     <gmd:useConstraints>
+      <gmd:MD_RestrictionCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
+     </gmd:useConstraints>
+     <!-- Element 21.2 Other Constraints (M) -->
+     <gmd:otherConstraints>
+      <gco:CharacterString>Access may be available upon request.</gco:CharacterString>
+     </gmd:otherConstraints>
+    </gmd:MD_LegalConstraints>
+   </gmd:resourceConstraints>
+   <!--Element 32 Spatial representation type (C)-->
+   <gmd:spatialRepresentationType>
+    <gmd:MD_SpatialRepresentationTypeCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="grid"/>
+   </gmd:spatialRepresentationType>
+   <!--Element 18 Spatial resolution (C)-->
+   <gmd:spatialResolution>
+    <gmd:MD_Resolution>
+     <gmd:distance>
+      <gco:Distance uom="urn:ogc:def:uom:EPSG::9001">250</gco:Distance>
+     </gmd:distance>
+    </gmd:MD_Resolution>
+   </gmd:spatialResolution>
+   <!-- 8 Resource languages (C) -->
+   <gmd:language>
+    <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng">English</gmd:LanguageCode>
+   </gmd:language>
+   <!-- 33 Character encoding (C) -->
+   <gmd:characterSet>
+     <gmd:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">8-bit variable size UCS Transfer Format, based on ISO/IEC 10646</gmd:MD_CharacterSetCode>
+   </gmd:characterSet>
+   <!-- 9 Topic category (C) -->
+   <gmd:topicCategory>
+    <gmd:MD_TopicCategoryCode>oceans</gmd:MD_TopicCategoryCode>
+   </gmd:topicCategory>
+   <!-- 13 Extent (O) -->
+   <gmd:extent>
+    <gmd:EX_Extent>
+     <!--  12 Geographic bounding box (C)  -->
+     <gmd:geographicElement>
+      <gmd:EX_GeographicBoundingBox>
+       <gmd:westBoundLongitude>
+        <gco:Decimal>-15.320434570313</gco:Decimal>
+       </gmd:westBoundLongitude>
+       <gmd:eastBoundLongitude>
+        <gco:Decimal>-6.9708251953125</gco:Decimal>
+       </gmd:eastBoundLongitude>
+       <gmd:southBoundLatitude>
+        <gco:Decimal>47.91277536651</gco:Decimal>
+       </gmd:southBoundLatitude>
+       <gmd:northBoundLatitude>
+        <gco:Decimal>50.180525848497</gco:Decimal>
+       </gmd:northBoundLatitude>
+      </gmd:EX_GeographicBoundingBox>
+     </gmd:geographicElement>
+     <!--  12 Geographic bounding box (C)  -->
+     <gmd:geographicElement>
+      <gmd:EX_GeographicBoundingBox>
+       <gmd:westBoundLongitude>
+        <gco:Decimal>-7.9638674855232</gco:Decimal>
+       </gmd:westBoundLongitude>
+       <gmd:eastBoundLongitude>
+        <gco:Decimal>-6.1279276013374</gco:Decimal>
+       </gmd:eastBoundLongitude>
+       <gmd:southBoundLatitude>
+        <gco:Decimal>50.555712236625</gco:Decimal>
+       </gmd:southBoundLatitude>
+       <gmd:northBoundLatitude>
+        <gco:Decimal>51.245488134576</gco:Decimal>
+       </gmd:northBoundLatitude>
+      </gmd:EX_GeographicBoundingBox>
+     </gmd:geographicElement>
+     <gmd:geographicElement>
+      <gmd:EX_GeographicDescription>
+       <gmd:geographicIdentifier>
+        <gmd:MD_Identifier>
+         <gmd:authority>
+          <gmd:CI_Citation>
+           <gmd:title>
+            <gco:CharacterString>SeaVox salt and freshwater body gazetteer</gco:CharacterString>
+           </gmd:title>
+           <gmd:date>
+            <gmd:CI_Date>
+             <gmd:date>
+              <gco:Date>2021-01-06</gco:Date>
+             </gmd:date>
+             <gmd:dateType>
+              <gmd:CI_DateTypeCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation">creation</gmd:CI_DateTypeCode>
+             </gmd:dateType>
+            </gmd:CI_Date>
+           </gmd:date>
+          </gmd:CI_Citation>
+         </gmd:authority>
+         <gmd:code>
+          <gmx:Anchor xlink:href="http://vocab.nerc.ac.uk/collection/C19/current/">Celtic Sea</gmx:Anchor>
+         </gmd:code>
+        </gmd:MD_Identifier>
+       </gmd:geographicIdentifier>
+      </gmd:EX_GeographicDescription>
+     </gmd:geographicElement>
+     <gmd:geographicElement>
+      <gmd:EX_GeographicDescription>
+       <gmd:geographicIdentifier>
+        <gmd:MD_Identifier>
+         <gmd:authority>
+          <gmd:CI_Citation>
+           <gmd:title>
+            <gco:CharacterString>SeaVox salt and freshwater body gazetteer</gco:CharacterString>
+           </gmd:title>
+           <gmd:date>
+            <gmd:CI_Date>
+             <gmd:date>
+              <gco:Date>2021-01-06</gco:Date>
+             </gmd:date>
+             <gmd:dateType>
+              <gmd:CI_DateTypeCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation">creation</gmd:CI_DateTypeCode>
+             </gmd:dateType>
+            </gmd:CI_Date>
+           </gmd:date>
+          </gmd:CI_Citation>
+         </gmd:authority>
+         <gmd:code>
+          <gmx:Anchor xlink:href="http://vocab.nerc.ac.uk/collection/C19/current/">English Channel</gmx:Anchor>
+         </gmd:code>
+        </gmd:MD_Identifier>
+       </gmd:geographicIdentifier>
+      </gmd:EX_GeographicDescription>
+     </gmd:geographicElement>
+     <gmd:geographicElement>
+      <gmd:EX_GeographicDescription>
+       <gmd:geographicIdentifier>
+        <gmd:MD_Identifier>
+         <gmd:authority>
+          <gmd:CI_Citation>
+           <gmd:title>
+            <gco:CharacterString>Charting Progress 2 Sea Areas</gco:CharacterString>
+           </gmd:title>
+           <gmd:date>
+            <gmd:CI_Date>
+             <gmd:date>
+              <gco:Date>2021-01-06</gco:Date>
+             </gmd:date>
+             <gmd:dateType>
+              <gmd:CI_DateTypeCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation">creation</gmd:CI_DateTypeCode>
+             </gmd:dateType>
+            </gmd:CI_Date>
+           </gmd:date>
+          </gmd:CI_Citation>
+         </gmd:authority>
+         <gmd:code>
+          <gco:CharacterString>Western Channel and Celtic Sea</gco:CharacterString>
+         </gmd:code>
+        </gmd:MD_Identifier>
+       </gmd:geographicIdentifier>
+      </gmd:EX_GeographicDescription>
+     </gmd:geographicElement>
+     <gmd:geographicElement>
+      <gmd:EX_GeographicDescription>
+       <gmd:geographicIdentifier>
+        <gmd:MD_Identifier>
+         <gmd:authority>
+          <gmd:CI_Citation>
+           <gmd:title>
+            <gco:CharacterString>ICES Rectangles</gco:CharacterString>
+           </gmd:title>
+           <gmd:date>
+            <gmd:CI_Date>
+             <gmd:date>
+              <gco:Date>2021-01-06</gco:Date>
+             </gmd:date>
+             <gmd:dateType>
+              <gmd:CI_DateTypeCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation">creation</gmd:CI_DateTypeCode>
+             </gmd:dateType>
+            </gmd:CI_Date>
+           </gmd:date>
+          </gmd:CI_Citation>
+         </gmd:authority>
+         <gmd:code>
+          <gco:CharacterString>27D9</gco:CharacterString>
+         </gmd:code>
+        </gmd:MD_Identifier>
+       </gmd:geographicIdentifier>
+      </gmd:EX_GeographicDescription>
+     </gmd:geographicElement>
+     <gmd:geographicElement>
+      <gmd:EX_GeographicDescription>
+       <gmd:geographicIdentifier>
+        <gmd:MD_Identifier>
+         <gmd:authority>
+          <gmd:CI_Citation>
+           <gmd:title>
+            <gco:CharacterString>ICES Statistical Areas</gco:CharacterString>
+           </gmd:title>
+           <gmd:date>
+            <gmd:CI_Date>
+             <gmd:date>
+              <gco:Date>2021-01-06</gco:Date>
+             </gmd:date>
+             <gmd:dateType>
+              <gmd:CI_DateTypeCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation">creation</gmd:CI_DateTypeCode>
+             </gmd:dateType>
+            </gmd:CI_Date>
+           </gmd:date>
+          </gmd:CI_Citation>
+         </gmd:authority>
+         <gmd:code>
+          <gco:CharacterString>VIIh</gco:CharacterString>
+         </gmd:code>
+        </gmd:MD_Identifier>
+       </gmd:geographicIdentifier>
+      </gmd:EX_GeographicDescription>
+     </gmd:geographicElement>
+     <gmd:geographicElement>
+      <gmd:EX_GeographicDescription>
+       <gmd:geographicIdentifier>
+        <gmd:MD_Identifier>
+         <gmd:authority>
+          <gmd:CI_Citation>
+           <gmd:title>
+            <gco:CharacterString>SeaVoX Vertical Co-ordinate Coverages</gco:CharacterString>
+           </gmd:title>
+           <gmd:date>
+            <gmd:CI_Date>
+             <gmd:date>
+              <gco:Date>2021-01-06</gco:Date>
+             </gmd:date>
+             <gmd:dateType>
+              <gmd:CI_DateTypeCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+             </gmd:dateType>
+            </gmd:CI_Date>
+           </gmd:date>
+          </gmd:CI_Citation>
+         </gmd:authority>
+         <gmd:code>
+          <gmx:Anchor xlink:href="http://vocab.nerc.ac.uk/collection/L13/current/U1">water column</gmx:Anchor>
+         </gmd:code>
+        </gmd:MD_Identifier>
+       </gmd:geographicIdentifier>
+      </gmd:EX_GeographicDescription>
+     </gmd:geographicElement>
+     <gmd:temporalElement>
+      <gmd:EX_TemporalExtent>
+       <gmd:extent>
+        <gml:TimePeriod gml:id="MEDIN_cd8ec516-dc77-462c-8265-601fa86fdafd">
+         <gml:beginPosition>2022-09-01</gml:beginPosition>
+         <gml:endPosition>2022-11-20</gml:endPosition>
+        </gml:TimePeriod>
+       </gmd:extent>
+      </gmd:EX_TemporalExtent>
+     </gmd:temporalElement>
+    </gmd:EX_Extent>
+   </gmd:extent>
+   <!-- Element 19 Additional information (O) -->
+   <gmd:supplementalInformation>
+    <gco:CharacterString>The purpose of this element is to record relevant information that does not clearly belong in another element. </gco:CharacterString>
+   </gmd:supplementalInformation>
+   <gmd:distributionFormat>
+    <gmd:MD_Format>
+     <gmd:name>
+      <gmx:Anchor xlink:type="simple" xlink:href="http://vocab.nerc.ac.uk/collection/M01/current/DEL">Delimited</gmx:Anchor>
+     </gmd:name>
+     <gmd:version>
+      <gco:CharacterString>1.0</gco:CharacterString>
+     </gmd:version>
+    </gmd:MD_Format>
+   </gmd:distributionFormat>
+  </gmd:MD_DataIdentification>
+ </gmd:identificationInfo>
+ <!--Element 5 - Resource locator (C)-->
+ <gmd:distributionInfo>
+  <gmd:MD_Distribution>
+   <gmd:distributionFormat>
+    <gmd:MD_Format>
+     <gmd:name>
+      <gco:CharacterString>Unknown</gco:CharacterString>
+     </gmd:name>
+     <gmd:version gco:nilReason="inapplicable"/>
+    </gmd:MD_Format>
+   </gmd:distributionFormat>
+   <gmd:transferOptions>
+    <gmd:MD_DigitalTransferOptions>
+     <gmd:onLine>
+      <gmd:CI_OnlineResource>
+       <gmd:linkage>
+        <gmd:URL>http://marinedatainstitution.org/data/database/datapotal/#aaa1</gmd:URL>
+       </gmd:linkage>
+       <gmd:name>
+        <gco:CharacterString>Marine Data Institution data portal</gco:CharacterString>
+       </gmd:name>
+       <gmd:description>
+        <gco:CharacterString>A detailed text description of what the online resource is or does.</gco:CharacterString>
+       </gmd:description>
+       <gmd:function>
+        <gmd:CI_OnLineFunctionCode codeList=" https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download">download</gmd:CI_OnLineFunctionCode>
+       </gmd:function>
+      </gmd:CI_OnlineResource>
+     </gmd:onLine>
+    </gmd:MD_DigitalTransferOptions>
+   </gmd:transferOptions>
+  </gmd:MD_Distribution>
+ </gmd:distributionInfo>
+ <!-- 25 Conformity (C) -->
+ <gmd:dataQualityInfo>
+  <gmd:DQ_DataQuality>
+   <gmd:scope>
+    <gmd:DQ_Scope>
+     <gmd:level>
+      <gmd:MD_ScopeCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ScopeCode" codeListValue="series">series</gmd:MD_ScopeCode>
+     </gmd:level>
+    </gmd:DQ_Scope>
+   </gmd:scope>
+   <gmd:report>
+    <gmd:DQ_DomainConsistency>
+     <gmd:result>
+      <gmd:DQ_ConformanceResult>
+       <gmd:specification>
+        <gmd:CI_Citation>
+         <gmd:title>
+          <gco:CharacterString>Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services</gco:CharacterString>
+         </gmd:title>
+         <gmd:date>
+          <gmd:CI_Date>
+           <gmd:date>
+            <gco:Date>2010-12-08</gco:Date>
+           </gmd:date>
+           <gmd:dateType>
+            <gmd:CI_DateTypeCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+           </gmd:dateType>
+          </gmd:CI_Date>
+         </gmd:date>
+        </gmd:CI_Citation>
+       </gmd:specification>
+       <gmd:explanation>
+        <gco:CharacterString>How your data conform to the specification.</gco:CharacterString>
+       </gmd:explanation>
+       <gmd:pass>
+        <gco:Boolean>true</gco:Boolean>
+       </gmd:pass>
+      </gmd:DQ_ConformanceResult>
+     </gmd:result>
+    </gmd:DQ_DomainConsistency>
+   </gmd:report>
+   <!-- 17 Lineage (C) -->
+   <gmd:lineage>
+    <gmd:LI_Lineage>
+     <gmd:statement>
+      <gco:CharacterString>Lineage includes the background information, history of the sources of data used and can include data quality statements.</gco:CharacterString>
+     </gmd:statement>
+    </gmd:LI_Lineage>
+   </gmd:lineage>
+  </gmd:DQ_DataQuality>
+ </gmd:dataQualityInfo>
+</gmd:MD_Metadata>
