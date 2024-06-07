@@ -30,8 +30,8 @@ The Sub-Licensee's use of the Software will be subject to the terms and conditio
 2.3 The Sub-Licensee is expressly prohibited from copying, duplicating, reproducing or otherwise transferring the Software (or any component thereof) for any other purpose whatsoever except for one copy retained for backup purposes.
 
 2.4 The Sub-Licensor shall have the right to grant to any person a Sub-Licence of Software under its agreement with HR Wallingford Ltd provided that:
-   1. Any such sub-license shall be granted on terms providing for the same rights and restrictions as the original License, and for the HR Wallingford Ltd hereto to have the right to enforce the equivalent terms to clause 4 “Copyright and Restrictions” and clause 6 “Confidentiality” hereto directly against any Sub-Licensee;
-   2. The Sub-Licensor shall, subject to taking reasonable steps to ensure Sub-Licensee(s) are made aware of sub-license conditions before or at the time of downloading, not be liable for all acts and omissions of any sub-Sub-Licensee.
+   2.4.1. Any such sub-license shall be granted on terms providing for the same rights and restrictions as the original License, and for the HR Wallingford Ltd hereto to have the right to enforce the equivalent terms to clause 4 “Copyright and Restrictions” and clause 6 “Confidentiality” hereto directly against any Sub-Licensee;
+   2.4.2. The Sub-Licensor shall, subject to taking reasonable steps to ensure Sub-Licensee(s) are made aware of sub-license conditions before or at the time of downloading, not be liable for all acts and omissions of any sub-Sub-Licensee.
 
 2.5 The Sub-Licensee shall provide on request to the Sub-Licensor a list of contact details including details of name, address, telephone, and email contact details for the responsible person within the Sub-Licensee’s organisation. This information may be provided to the Sub-Licensor by the Sub-Licensee on demand and prior to the delivery of the Software to the Sub-Licensee.
 
@@ -46,8 +46,8 @@ The Sub-Licensee's use of the Software will be subject to the terms and conditio
 ### 4. WARRANTY AND LIABILITY
 
 4.1 Warranty on Software
-   1. The Sub-Licensee is responsible for the use of the Software, all results obtained and how these are interpreted. The Sub-Licensor does not warrant that the Software will meet the Sub-Licensee's requirements or that operation of the Software will be error or interruption free.
-   2. It is the Sub-Licensee's responsibility to assess whether the Software will operate on its equipment and no liability is accepted by the Sub-Licensor for failure of the Software's operation on the equipment on which it is installed.
+   4.1.1. The Sub-Licensee is responsible for the use of the Software, all results obtained and how these are interpreted. The Sub-Licensor does not warrant that the Software will meet the Sub-Licensee's requirements or that operation of the Software will be error or interruption free.
+   4.1.2. It is the Sub-Licensee's responsibility to assess whether the Software will operate on its equipment and no liability is accepted by the Sub-Licensor for failure of the Software's operation on the equipment on which it is installed.
 
 4.2 All warranties whether implied by statute or common law or otherwise are hereby expressly excluded to the fullest extent permissible by law.
 
@@ -56,7 +56,7 @@ The Sub-Licensee's use of the Software will be subject to the terms and conditio
 4.4 In so far as liability may be limited by law the Sub-Licensor excludes liability for all damages, losses, and causes of action, whether in contract tort (including negligence) or otherwise provided that the Sub-Licensor does not seek to exclude or restrict its liability for death or personal injury resulting from its negligence.
 
 4.5 Intellectual Property Rights
-   1. The Sub-Licensor does not warrant that use of the Software will not infringe the intellectual property rights of any third party although it is unaware of any such possibility.
+   4.5.1. The Sub-Licensor does not warrant that use of the Software will not infringe the intellectual property rights of any third party although it is unaware of any such possibility.
 
 ### 5. TERMINATION
 
