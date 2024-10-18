@@ -1,0 +1,1 @@
+This folder contains the MEDIN Schematron that validates 'dataset', 'series', 'service' and nonGeographicDataset metadata records.

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://www.isotc211.org/2005/gmd" elementFormDefault="qualified" version="0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1">
+	<!-- ================================= Annotation ================================ -->
+	<xs:annotation>
+		<xs:documentation>This file was generated from ISO TC/211 UML class diagrams == 01-26-2005 12:40:00 ====== </xs:documentation>
+	</xs:annotation>
+	<!-- ================================== Imports ================================== -->
+	<xs:import namespace="http://www.isotc211.org/2005/gco" schemaLocation="../gco/gco.xsd"/>
+	<xs:import namespace="http://www.isotc211.org/2005/gmx" schemaLocation="../gmx/gmx.xsd"/>
+	<xs:import namespace="http://www.isotc211.org/2005/srv" schemaLocation="../srv/srv.xsd"/>
+	<xs:import namespace="http://www.isotc211.org/2005/srv" schemaLocation="../gml/gml.xsd"/>
+	<xs:include schemaLocation="../gmd/spatialRepresentation.xsd"/>
+	<xs:include schemaLocation="../gmd/metadataExtension.xsd"/>
+	<xs:include schemaLocation="../gmd/content.xsd"/>
+	<xs:include schemaLocation="../gmd/metadataApplication.xsd"/>
+	<xs:include schemaLocation="../gmd/applicationSchema.xsd"/>
+	<xs:include schemaLocation="../gmd/portrayalCatalogue.xsd"/>
+	<xs:include schemaLocation="../gmd/dataQuality.xsd"/>
+	<xs:include schemaLocation="../gmd/freeText.xsd"/>
+	<!-- ########################################################################### -->
+	<!-- ########################################################################### -->
+	<!-- ================================== Classes ================================= -->
+	<xs:complexType name="MD_Metadata_Type">
+		<xs:annotation>
+			<xs:documentation>Information about the metadata</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="fileIdentifier" type="gco:CharacterString_PropertyType" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="language" minOccurs="1" maxOccurs="1">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="gmd:LanguageCode"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="hierarchyLevel" minOccurs="1" maxOccurs="1">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="gmd:MD_ScopeCode"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="characterSet" minOccurs="0" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="gmd:MD_CharacterSetCode"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="parentIdentifier" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="hierarchyLevelName" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="contact" type="gmd:CI_ResponsibleParty_PropertyType" minOccurs="1" maxOccurs="unbounded"/>
+					<xs:element name="dateStamp" type="gco:Date_PropertyType" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="metadataStandardName" type="gco:CharacterString_PropertyType" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="metadataStandardVersion" type="gco:CharacterString_PropertyType" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="referenceSystemInfo" type="gmd:MD_ReferenceSystem_PropertyType" minOccurs="1" maxOccurs="unbounded"/>
+					<xs:element name="identificationInfo" type="gmd:MD_Identification_PropertyType" maxOccurs="unbounded"/>
+					<xs:element name="distributionInfo" type="gmd:MD_Distribution_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dataQualityInfo" type="gmd:DQ_DataQuality_PropertyType" minOccurs="1" maxOccurs="1"/>
+					
+					
+<!--					<xs:element name="dataSetURI" type="gco:CharacterString_PropertyType" minOccurs="0"/>
+					<xs:element name="locale" type="gmd:PT_Locale_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="spatialRepresentationInfo" type="gmd:MD_SpatialRepresentation_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="metadataExtensionInfo" type="gmd:MD_MetadataExtensionInformation_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="contentInfo" type="gmd:MD_ContentInformation_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="portrayalCatalogueInfo" type="gmd:MD_PortrayalCatalogueReference_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="metadataConstraints" type="gmd:MD_Constraints_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="applicationSchemaInfo" type="gmd:MD_ApplicationSchemaInformation_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="metadataMaintenance" type="gmd:MD_MaintenanceInformation_PropertyType" minOccurs="0"/>
+					<xs:element name="series" type="gmd:DS_Aggregate_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="describes" type="gmd:DS_DataSet_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="propertyType" type="gco:ObjectReference_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="featureType" type="gco:ObjectReference_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="featureAttribute" type="gco:ObjectReference_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+-->				
+				</xs:sequence>
+				<xs:assert test="gmd:hierarchyLevel/gmd:MD_ScopeCode = 'series' 
+                 or gmd:hierarchyLevel/gmd:MD_ScopeCode = 'dataset'
+                 or gmd:hierarchyLevel/gmd:MD_ScopeCode = 'service'">
+					<xs:annotation>
+						<xs:documentation>Resource Type must be one of 'series','dataset','service'</xs:documentation>
+					</xs:annotation>
+				</xs:assert> 
+				<xs:assert test="gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue = 'series'
+                 or gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue = 'dataset'
+                 or gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue = 'service'">
+					<xs:annotation>
+						<xs:documentation>Resource Type must be one of 'series','dataset','service'</xs:documentation>
+					</xs:annotation>
+				</xs:assert> 
+				<xs:assert test="gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'service'] 
+                 or gmd:identificationInfo/(gmd:MD_DataIdentification | srv:SV_ServiceIdentification)/gmd:citation/gmd:CI_Citation/gmd:identifier/(gmd:RS_Identifier | gmd:MD_Identifier)/gmd:code">
+					<xs:annotation>
+						<xs:documentation>Citation must include code</xs:documentation>
+					</xs:annotation>
+				</xs:assert> 
+				<xs:assert test="gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'service'] or
+						(count(gmd:identificationInfo/(gmd:MD_DataIdentification | srv:SV_ServiceIdentification)/gmd:citation/gmd:CI_Citation/gmd:identifier/(gmd:RS_Identifier | gmd:MD_Identifier)/gmd:code/gco:CharacterString[string-length() gt 0]) gt 0 or
+						count(gmd:identificationInfo/(gmd:MD_DataIdentification | srv:SV_ServiceIdentification)/gmd:citation/gmd:CI_Citation/gmd:identifier/(gmd:RS_Identifier | gmd:MD_Identifier)/gmd:code/gmx:Anchor[string-length() gt 0]) gt 0)">
+					<xs:annotation>
+						<xs:documentation>Citation code cannot be blank</xs:documentation>
+					</xs:annotation>
+				</xs:assert> 
+				<xs:assert test="(gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'service'] and gmd:identificationInfo/srv:SV_ServiceIdentification)
+					or ((gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'dataset'] 
+					or gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'series']) and gmd:identificationInfo/gmd:MD_DataIdentification)" >
+					<xs:annotation>
+						<xs:documentation>MD_DataIdentification must be included when Resource Type is 'series' or 'dataset' or SV_ServiceIdentification when Resource Type is 'service'</xs:documentation>
+					</xs:annotation>
+				</xs:assert>
+				<xs:assert test="(gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'service'] and string-length(gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:abstract/gco:CharacterString) ge 100)
+					or ((gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'dataset'] 
+					or gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'series']) and string-length(gmd:identificationInfo/gmd:MD_DataIdentification/gmd:abstract/gco:CharacterString) ge 100)" >
+					<xs:annotation>
+						<xs:documentation>abstract must be at least 100 characters long</xs:documentation>
+					</xs:annotation>
+				</xs:assert>
+				<xs:assert test="(gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'service'] and gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:accessConstraints/gmd:MD_RestrictionCode = 'otherRestrictions')
+					or ((gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'dataset'] 
+					or gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'series']) and gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:accessConstraints/gmd:MD_RestrictionCode = 'otherRestrictions')" >
+					<xs:annotation>
+						<xs:documentation>access constraints are mandatory</xs:documentation>
+					</xs:annotation>
+				</xs:assert>
+				<xs:assert test="(gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'service'] and gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:useConstraints/gmd:MD_RestrictionCode = 'otherRestrictions')
+					or ((gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'dataset'] 
+					or gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'series']) and gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:useConstraints/gmd:MD_RestrictionCode = 'otherRestrictions')" >
+					<xs:annotation>
+						<xs:documentation>use constraints are mandatory</xs:documentation>
+					</xs:annotation>
+				</xs:assert>
+				<xs:assert test="(gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'service'])
+					or ((gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'dataset'] or gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'series'])
+					and gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:temporalElement/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod)" >
+					<xs:annotation>
+						<xs:documentation>When Resource Type is 'series' or 'dataset' Temporal Extent is mandatory otherwise if it is a 'service' then it is conditional on there being a defined extent</xs:documentation>
+					</xs:annotation>
+				</xs:assert>
+				<xs:assert test="(gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'service'])
+					or ((gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'dataset'] or gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'series'])
+					and gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox)" >
+					<xs:annotation>
+						<xs:documentation>When Resource Type is 'series' or 'dataset' Geographic Bounding Box is mandatory otherwise if it is a 'service' then it is conditional on there being a defined extent</xs:documentation>
+					</xs:annotation>
+				</xs:assert>
+				<xs:assert test="
+					gmd:identificationInfo/(gmd:MD_DataIdentification/gmd:extent | srv:SV_ServiceIdentification/srv:extent)/gmd:EX_Extent/gmd:verticalElement
+					or
+					(not(gmd:identificationInfo/(gmd:MD_DataIdentification/gmd:extent | srv:SV_ServiceIdentification/srv:extent)/gmd:EX_Extent/gmd:verticalElement) and
+					(count(gmd:identificationInfo/(gmd:MD_DataIdentification | srv:SV_ServiceIdentification)/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gmx:Anchor[text() = ('abyssobenthic',
+					'abyssopelagic water column','atmosphere','atmospheric boundary layer',
+					'bathybenthic','bathypelagic water column','benthic boundary layer',
+					'circalittoral','core','crust','deep circalittoral',
+					'epipelagic water column','exosphere','hadopelagic water column','heterosphere',
+					'homopause','homosphere','infralittoral','littoral','mantle',
+					'mesopause','mesopelagic water column','mesosphere','soil and sediment',
+					'soil and sediment boundary layer','stratopause','stratosphere','thermopause','thermosphere',
+					'tropopause','troposphere','upper epipelagic water column','upper slope','water column',
+					'water column boundary layer','water column skin')]) gt 0
+					or
+					count(gmd:identificationInfo/(gmd:MD_DataIdentification | srv:SV_ServiceIdentification)/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicDescription/gmd:geographicIdentifier/gmd:MD_Identifier/gmd:code/gmx:Anchor[text() = ('abyssobenthic',
+					'abyssopelagic water column','atmosphere','atmospheric boundary layer',
+					'bathybenthic','bathypelagic water column','benthic boundary layer',
+					'circalittoral','core','crust','deep circalittoral',
+					'epipelagic water column','exosphere','hadopelagic water column','heterosphere',
+					'homopause','homosphere','infralittoral','littoral','mantle',
+					'mesopause','mesopelagic water column','mesosphere','soil and sediment',
+					'soil and sediment boundary layer','stratopause','stratosphere','thermopause','thermosphere',
+					'tropopause','troposphere','upper epipelagic water column','upper slope','water column',
+					'water column boundary layer','water column skin')]) gt 0))">
+					<xs:annotation>
+						<xs:documentation>A vertical extent keyword must be included if Vertical extent information cannot be included</xs:documentation>
+					</xs:annotation>
+				</xs:assert>
+				<xs:assert test="(gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'dataset'] or gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'series']) or 
+					(gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'service'] and 
+					count(gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gmx:Anchor[text() = 
+					('Geographic human interaction services', 'Catalogue viewer', 'Geographic viewer', 'Geographic spreadsheet viewer', 'Service editor', 'Chain definition editor', 
+					'Workflow enactment manager', 'Geographic feature editor', 'Geographic symbol editor', 'Feature generalisation editor', 'Geographic data-structure viewer', 
+					'Geographic model/information management service', 'Feature access service', 'Map access service', 'Coverage access service', 'Sensor description service', 
+					'Product access service', 'Feature type service', 'Catalogue service', 'Registry Service', 'Gazetteer service', 'Order handling service', 'Standing order service', 
+					'Geographic workflow/task management services', 'Chain definition service', 'Workflow enactment service', 'Subscription service', 
+					'Geographic processing services – spatial', 'Coordinate conversion service', 'Coordinate transformation service', 'Coverage/vector conversion service', 
+					'Image coordinate conversion service', 'Rectification service', 'Orthorectification service', 'Sensor geometry model adjustment service', 
+					'Image geometry model conversion service', 'Subsetting service', 'Sampling service', 'Tiling change service', 'Dimension measurement service', 
+					'Feature manipulation services', 'Feature matching service', 'Feature generalisation service', 'Route determination service', 'Positioning service', 'Proximity analysis service', 
+					'Geographic processing services – thematic', 'Geoparameter calculation service', 'Thematic classification service', 'Feature generalisation service', 
+					'Subsetting service', 'Spatial counting service', 'Change detection service', 'Geographic information extraction services', 'Image processing service', 
+					'Reduced resolution generation service', 'Image Manipulation Services', 'Image understanding services', 'Image synthesis services', 'Multiband image manipulation', 
+					'Object detection service', 'Geoparsing service', 'Geocoding service', 'Geographic processing services – temporal', 'Temporal reference system transformation service', 
+					'Subsetting service', 'Sampling service', 'Temporal proximity analysis service', 'Geographic processing services – metadata', 'Statistical calculation service', 
+					'Geographic annotation services', 'Geographic communication services', 'Encoding service', 'Transfer service', 'Geographic compression service', 
+					'Geographic format conversion service', 'Messaging service', 'Remote file and executable management')]) gt 0)">
+					<xs:annotation>
+						<xs:documentation>When Resource Type is a service then a service keyword must be included</xs:documentation>
+					</xs:annotation>
+				</xs:assert> 
+				<!--				<xs:assert test="gmd:identificationInfo/gmd:MD_DataIdentification">
+					<xs:annotation>
+						<xs:documentation>MD_DataIdentification must be included</xs:documentation>
+					</xs:annotation>
+				</xs:assert>
+				<xs:assert test="string-length(gmd:identificationInfo/gmd:MD_DataIdentification/gmd:abstract/gco:CharacterString) ge 100">
+					<xs:annotation>
+						<xs:documentation>Abstract must be 100 characters or more</xs:documentation>
+					</xs:annotation>
+				</xs:assert>  -->
+				<xs:assert test="string-length(gmd:fileIdentifier/gco:CharacterString) gt 0">
+					<xs:annotation>
+						<xs:documentation>fileIdentifier cannot be blank</xs:documentation>
+					</xs:annotation>
+				</xs:assert> 
+				<xs:assert test="(gmd:metadataStandardName/gco:CharacterString = 'MEDIN') or (gmd:metadataStandardName/gmx:Anchor/@xlink:href = 'http://vocab.nerc.ac.uk/collection/M25/current/MEDIN/')">
+					<xs:annotation>
+						<xs:documentation>metadataStandardName must be the characterString 'MEDIN' or the 'MEDIN' term from the M25 controlled vocabulary encoded using a gmx:Anchor.</xs:documentation>
+					</xs:annotation>
+				</xs:assert>
+				<xs:assert test="string-length(gmd:metadataStandardVersion/gco:CharacterString) gt 0">
+					<xs:annotation>
+						<xs:documentation>metadataStandardVersion cannot be blank</xs:documentation>
+					</xs:annotation>
+				</xs:assert> 
+				<xs:assert test="gmd:dateStamp/gco:Date or gmd:dateStamp/gco:DateTime">
+					<xs:annotation>
+						<xs:documentation>A valid dateStamp must be included</xs:documentation>
+					</xs:annotation>
+				</xs:assert>
+				<xs:assert test="count(gmd:contact/gmd:CI_ResponsibleParty/gmd:role/gmd:CI_RoleCode[text() = 'pointOfContact']) = 1"></xs:assert> 
+				<xs:assert test="count(gmd:identificationInfo/*/gmd:pointOfContact/gmd:CI_ResponsibleParty/gmd:role/gmd:CI_RoleCode[text() = 'distributor']) >= 1"></xs:assert> 
+				<xs:assert test="count(gmd:identificationInfo/*/gmd:pointOfContact/gmd:CI_ResponsibleParty/gmd:role/gmd:CI_RoleCode[text() = 'originator']) >= 1"></xs:assert> 
+				<xs:assert test="count(gmd:identificationInfo/*/gmd:pointOfContact/gmd:CI_ResponsibleParty/gmd:role/gmd:CI_RoleCode[text() = 'custodian']) >= 1"></xs:assert> 	
+				<xs:assert test="count(gmd:identificationInfo/*/gmd:pointOfContact/gmd:CI_ResponsibleParty/gmd:role/gmd:CI_RoleCode[text() = 'owner']) >= 1"></xs:assert> 	
+				<xs:assert test="((gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'service']) and not(gmd:identificationInfo/*/gmd:characterSet))
+					or ((gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'dataset'] 
+					or gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'series']) and gmd:identificationInfo/*/gmd:characterSet)" >
+					<xs:annotation>
+						<xs:documentation>characterSet must be included when Resource Type is 'series' or 'dataset' but not when Resource Type is 'service'</xs:documentation>
+					</xs:annotation>
+				</xs:assert>
+				<xs:assert test="((gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'dataset']) and not(gmd:hierarchyLevelName))
+					or ((gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'service'] 
+					or gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'series']) and gmd:hierarchyLevelName)" >
+					<xs:annotation>
+						<xs:documentation>hierarchyLevelName must be included when Resource Type is 'series' or 'service' but not when Resource Type is 'dataset'</xs:documentation>
+					</xs:annotation>
+				</xs:assert>
+				<xs:assert test="((gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'service']) and not(gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:lineage/gmd:LI_Lineage/gmd:statement/gco:CharacterString))
+					or ((gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'dataset'] 
+					or gmd:hierarchyLevel/gmd:MD_ScopeCode[. eq 'series']) and gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:lineage/gmd:LI_Lineage/gmd:statement/gco:CharacterString)" >
+					<xs:annotation>
+						<xs:documentation>lineage must be included when Resource Type is 'series' or 'dataset' but not when Resource Type is 'service'</xs:documentation>
+					</xs:annotation>
+				</xs:assert>
+				<!--<xs:assert test="gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:lineage/gmd:LI_Lineage/gmd:statement" >
+					<xs:annotation>
+						<xs:documentation>lineage must be included when Resource Type is 'series' or 'dataset' but not when Resource Type is 'service'</xs:documentation>
+					</xs:annotation>
+				</xs:assert>-->
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="MD_Metadata" type="gmd:MD_Metadata_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="MD_Metadata_PropertyType">
+		<xs:sequence minOccurs="1">
+			<xs:element ref="gmd:MD_Metadata"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+</xs:schema>

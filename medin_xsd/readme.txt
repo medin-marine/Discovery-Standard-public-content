@@ -1,0 +1,1 @@
+This folder contains the MEDIN XSD that validates the XML structure for 'dataset', 'series' and 'service' metadata records.
