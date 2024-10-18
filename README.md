@@ -3,7 +3,7 @@ MEDIN Discovery Metadata Standard public content. Includes PDF guidance notes an
 
 This repository hosts the following:
 
-* Public versions of the MEDIN Discovery Metadata Standard Guidance notes. The Guidance notes are stored as PDF documents and come in a full version, which includes XML encoding examples throughout the text, and a summmary version which excludes the XML encoding and some other minor details. 
+* Public versions of the MEDIN Geospatial and Non-Geospatial Discovery Metadata Standard Guidance notes. The Guidance notes are stored as PDF documents and come in a full version, which includes XML encoding examples throughout the text, and a summary version which excludes the XML encoding and some other minor details. 
 
 * Change log files - these are Word documents that contain the change history for recent versions of the standard, since v2.3.8. 
 
