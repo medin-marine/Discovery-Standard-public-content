@@ -1,0 +1,1 @@
+This folder contains the MEDIN Schematron that validates the MEDIN Geospatial and Non-Geospatial Discovery Metadata Standards. 
