@@ -1,3 +1,0 @@
-This folder contains XML files for the MEDIN Discovery Metadata Standard that have been validated with the version of the Schematron that is associated with the Guidance 
-notes version number in the filename. For example MEDIN_Metadata_service_v3_1_2_example.xml would be an example discovery metadata file that has been validated by the Schematron that
-checks the criteria for version 3.1.2 of the MEDIN Discovery Metadata Standard. 
